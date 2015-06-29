@@ -7,6 +7,9 @@ Objective-C version: <a><herf="https://github.com/ppt04025/ifengNewsOrderDemo">h
 因为上面大神的OC版本在Swift中遇到ARC问题，所以就尝试着重写一下到swift版本。<br>
 Rewrite this into swift version because the Objective-C version can not use in swift app. Kinda ARC issue.
 
+模拟器测试最低支持iOS7.1。
+Test successfully on iOS7.1.
+
 使用方法<br>
 Usage:<br>
 把OrderButton文件夹拖放到你的项目中就可以直接使用了。<br>
