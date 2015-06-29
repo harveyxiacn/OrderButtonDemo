@@ -335,21 +335,8 @@ class TouchView: UIImageView {
         }
         return CGFloat(y)
     }
-    /*func array2StartY() -> CUnsignedLong {
-        var y: CUnsignedLong = 0;
-        
-        y = (_viewArr11.count as NSNumber).unsignedLongValue / 5 + 2
-        
-        if _viewArr11.count % 5 == 0 {
-            y -= 1
-        }
-        return y
-    }*/
+    /** 获取本view在subviews中的位置*/
     func indexOfSelfInSubviews() -> Int{
-        //var touchView = TouchView(frame: CGRectMake(0, 0, 0, 0))
-        //var views = self.superview?.subviews as! [TouchView]
-        //var arr = [1, 2, 3]
-        //println("\(_stdlib_getDemangledTypeName(touchView))")
         var index = 0
         for v in self.superview!.subviews {
             if v is TouchView {

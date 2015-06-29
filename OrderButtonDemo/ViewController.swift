@@ -33,10 +33,7 @@ class ViewController: UIViewController {
         orderVC.titleArr = orderButton.titleArr;
         orderVC.urlStringArr = orderButton.urlStringArr;
         var orderView: UIView = orderVC.view
-        //println("orderButton.vc.view.bounds.size.width = \(orderButton.vc.view.bounds.size.width)")
-        //println("self.view.frame.width \(self.view.frame.width)")
         orderView.frame = CGRectMake(0, 0 - (orderButton.vc.view.bounds.size.height), orderButton.vc.view.bounds.size.width, orderButton.vc.view.bounds.size.height)
-        //orderView.frame = CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height)
         orderView.backgroundColor = UIColor(red:239/255.0, green:239/255.0, blue:239/255.0, alpha:1.0)
         orderVC.backButton.addTarget(self, action:"backAction:", forControlEvents:UIControlEvents.TouchUpInside)
         
@@ -45,7 +42,6 @@ class ViewController: UIViewController {
         
         UIView.animateWithDuration(0.5, delay: 0, options: UIViewAnimationOptions.LayoutSubviews, animations: { () in
             orderView.frame = CGRectMake(0, 0, orderButton.vc.view.bounds.size.width, orderButton.vc.view.bounds.size.height)
-            //orderView.frame = CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height)
             }, completion: { (Bool) in
         })
     }
